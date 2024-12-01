@@ -3,6 +3,7 @@
 #include <ws2tcpip.h>     // For advanced TCP/IP functions
 #include <string>         // For using std::string
 #pragma comment(lib, "ws2_32.lib")  // Link Winsock library
+using namespace std;
 
 int main() {
     WSADATA wsaData;
@@ -23,6 +24,8 @@ int main() {
         WSACleanup();
         return 1;
     }
+
+    cout<<"hello this is santhoshi"<<endl;
 
     // Set up the server address struct
     server_addr.sin_family = AF_INET;
